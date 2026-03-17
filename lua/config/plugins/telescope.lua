@@ -1,6 +1,5 @@
 return {
     "nvim-telescope/telescope.nvim",
-    branch = "0.1.x",
     dependencies = {
         "nvim-lua/plenary.nvim",
         { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -12,11 +11,11 @@ return {
 
         telescope.setup({
             defaults = {
-                path_display = { "truncate " },
+                path_display = { "truncate" },
             },
         })
 
-        telescope.load_extension("fzf")
+        pcall(telescope.load_extension, "fzf")
 
         -- set keymaps
         local map = vim.keymap.set

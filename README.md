@@ -1,11 +1,11 @@
 # 🚀 Modern Neovim Configuration
 
-A high-performance, developer-centric Neovim configuration built with Lua, focused on speed, aesthetics, and a seamless development experience.
+A high-performance, developer-centric Neovim configuration built with Lua, focused on speed, aesthetics, and a seamless development experience. Now optimized for **Neovim 0.11+**.
 
 ## 🛠️ Tech Stack
 
 - **Plugin Manager:** [lazy.nvim](https://github.com/folke/lazy.nvim)
-- **LSP & Tooling:** [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), [mason.nvim](https://github.com/williamboman/mason.nvim), [lazydev.nvim](https://github.com/folke/lazydev.nvim)
+- **LSP & Tooling:** Core Neovim 0.11 LSP APIs (`vim.lsp.config`), [mason.nvim](https://github.com/williamboman/mason.nvim), [lazydev.nvim](https://github.com/folke/lazydev.nvim)
 - **Autocompletion:** [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) with [LSPKind](https://github.com/onsails/lspkind.nvim) icons
 - **Formatting:** [conform.nvim](https://github.com/stevearc/conform.nvim) (Prettier, Black, Stylua)
 - **Syntax Highlighting:** [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
@@ -16,12 +16,13 @@ A high-performance, developer-centric Neovim configuration built with Lua, focus
 
 ## ✨ Key Features
 
+- **Modern LSP Engine:** Leverages the latest Neovim 0.11+ internal configuration APIs for better stability and performance.
 - **Persistent Undo:** Never lose your changes across sessions (`undofile`).
 - **Smart Search:** Case-insensitive search that automatically becomes case-sensitive if you use capitals.
 - **Auto-Formatting:** Optimized for Prettier (JS/TS/CSS/HTML), Black/Isort (Python), and Stylua (Lua).
 - **Modern Completion:** VS Code-like icons and automatic parentheses insertion for functions.
 - **Optimized UI:** Fast startup, signcolumn enabled, and faster update times for snappier diagnostics.
-- **Better Navigation:** Smart `j`/`k` movements for wrapped lines and enhanced window management.
+- **Conventional Structure:** Uses a clean, impersonal `lua/config` folder structure.
 
 ## ⌨️ Keybindings
 
@@ -85,14 +86,15 @@ The `<leader>` key is set to `Space`.
 ## 🚀 Installation & Setup
 
 1. **Prerequisites:**
-   - Neovim 0.9.0+
+   - **Neovim 0.11.0+** (Required for the new LSP configuration)
    - `ripgrep` (for Telescope grep)
+   - `unzip` (for Mason to extract tools like Stylua)
    - `build-essential` (for FZF native build)
    - A Nerd Font (e.g., JetBrainsMono Nerd Font)
 
 2. **Setup:**
    ```bash
-   # Clone the config if starting fresh
+   # Clone the config
    git clone <your-repo-url> ~/.config/nvim
 
    # Open Neovim and install plugins
@@ -101,4 +103,3 @@ The `<leader>` key is set to `Space`.
 
 3. **Verify LSP/Tools:**
    Run `:Mason` to see installed servers and tools.
-# nvim
