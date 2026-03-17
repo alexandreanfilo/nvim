@@ -1,4 +1,4 @@
-require("alexandre.settings")
-require("alexandre.maps") -- key bindings
-require("alexandre.lazy") -- plugin manager
+require("config.settings")
+require("config.maps") -- key bindings
+require("config.lazy") -- plugin manager
 
