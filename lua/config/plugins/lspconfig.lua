@@ -46,10 +46,7 @@ return {
 
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-        -- 3. Modern Neovim 0.11+ configuration
-        -- We use vim.lsp.config and vim.lsp.enable
-        
-        -- Helper function to configure and enable a server
+        -- Helper to configure and enable a server lazily
         local function setup_server(server)
             if not vim.lsp.config[server] then
                 local config = {
@@ -57,7 +54,6 @@ return {
                     capabilities = capabilities,
                 }
                 
-                -- Specific settings for Lua
                 if server == "lua_ls" then
                     config.settings = {
                         Lua = {
@@ -72,12 +68,37 @@ return {
             vim.lsp.enable(server)
         end
 
-        -- Initial setup for already installed servers
+        -- Map of filetypes to LSP server names
+        local ft_map = {
+            lua = "lua_ls",
+            javascript = "ts_ls",
+            typescript = "ts_ls",
+            javascriptreact = "ts_ls",
+            typescriptreact = "ts_ls",
+            python = "pyright",
+            html = "html",
+            css = "cssls",
+            json = "jsonls",
+            yaml = "yamlls",
+            markdown = "marksman",
+        }
+
+        -- Load server only when filetype is detected
+        vim.api.nvim_create_autocmd("FileType", {
+            callback = function(args)
+                local server = ft_map[args.match]
+                if server then
+                    setup_server(server)
+                end
+            end,
+        })
+        
+        -- Fallback for servers not in ft_map but installed
         for _, server in ipairs(mason_lspconfig.get_installed_servers()) do
             setup_server(server)
         end
 
-        -- Handle servers installed later
+        -- Handle servers installed later via UI
         vim.api.nvim_create_autocmd("User", {
             pattern = "MasonLspConfigServerInstalled",
             callback = function(args)

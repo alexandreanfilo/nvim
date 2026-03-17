@@ -1,0 +1,299 @@
+--- Startup times for process: Primary (or UI client) ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.004  000.004: --- NVIM STARTING ---
+000.237  000.233: event init
+000.372  000.135: early init
+000.667  000.295: locale set
+000.752  000.085: init first window
+001.364  000.612: inits 1
+001.377  000.013: window checked
+001.382  000.004: parsing arguments
+002.145  000.035  000.035: require('vim.shared')
+002.239  000.031  000.031: require('vim.inspect')
+002.278  000.031  000.031: require('vim._options')
+002.279  000.130  000.068: require('vim._editor')
+002.280  000.192  000.027: require('vim._init_packages')
+002.282  000.709: init lua interpreter
+002.320  000.038: expanding arguments
+002.334  000.014: inits 2
+002.560  000.226: init highlight
+002.578  000.017: clear screen
+002.699  000.012  000.012: require('vim.keymap')
+003.379  000.098  000.098: sourcing nvim_exec2()
+003.468  000.888  000.779: require('vim._defaults')
+003.469  000.003: init default mappings & autocommands
+003.721  000.040  000.040: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/ftplugin.vim
+003.752  000.016  000.016: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/indent.vim
+004.045  000.249  000.249: require('config.settings')
+004.195  000.147  000.147: require('config.maps')
+004.508  000.257  000.257: require('lazy')
+004.567  000.049  000.049: require('ffi')
+004.601  000.017  000.017: require('vim.fs')
+004.673  000.070  000.070: require('vim.uri')
+004.682  000.113  000.026: require('vim.loader')
+004.754  000.061  000.061: require('lazy.stats')
+004.840  000.070  000.070: require('lazy.core.util')
+004.918  000.077  000.077: require('lazy.core.config')
+005.125  000.144  000.144: require('lazy.core.handler')
+005.411  000.069  000.069: require('lazy.pkg')
+005.417  000.159  000.091: require('lazy.core.meta')
+005.422  000.295  000.135: require('lazy.core.plugin')
+005.430  000.511  000.072: require('lazy.core.loader')
+006.088  000.073  000.073: require('lazy.async')
+006.232  000.098  000.098: require('lazy.manage.process')
+006.266  000.032  000.032: require('lazy.terminal')
+006.269  000.179  000.049: require('lazy.manage.task')
+006.271  000.407  000.156: require('lazy.manage.runner')
+006.274  000.514  000.107: require('lazy.manage')
+006.276  000.605  000.092: require('lazy.view.commands')
+006.376  000.078  000.078: require('lazy.core.fragments')
+008.172  000.045  000.045: require('lazy.core.handler.cmd')
+008.236  000.054  000.054: require('lazy.core.handler.keys')
+008.351  000.113  000.113: require('lazy.core.handler.event')
+008.395  000.040  000.040: require('lazy.core.handler.ft')
+008.464  000.008  000.008: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+008.478  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+008.800  000.112  000.112: sourcing nvim_exec2() called at /opt/nvim-linux-x86_64/share/nvim/runtime/filetype.lua:0
+008.805  000.175  000.063: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/filetype.lua
+008.808  000.196  000.021: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+008.875  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+008.882  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+009.526  000.056  000.056: require('tokyodark.config')
+009.530  000.309  000.253: require('tokyodark')
+009.675  000.142  000.142: sourcing nvim_exec2() called at /home/alexandreanfilo/.local/share/nvim/lazy/tokyodark.nvim/colors/tokyodark.lua:0
+009.806  000.119  000.119: sourcing nvim_exec2() called at /home/alexandreanfilo/.local/share/nvim/lazy/tokyodark.nvim/colors/tokyodark.lua:0
+010.229  000.121  000.121: require('tokyodark.utils')
+010.472  000.472  000.352: require('tokyodark.palette')
+010.692  000.216  000.216: require('tokyodark.terminal')
+011.166  001.350  000.661: require('tokyodark.highlights')
+011.695  002.504  000.583: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/tokyodark.nvim/colors/tokyodark.lua
+011.709  002.823  000.319: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.037  000.034  000.034: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/plenary.nvim/plugin/plenary.vim
+012.041  000.065  000.032: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.050  000.003  000.003: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.062  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.284  000.039  000.039: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/nvim-web-devicons/plugin/nvim-web-devicons.vim
+012.288  000.060  000.021: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.293  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.302  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.513  000.003  000.003: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.522  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.715  000.132  000.132: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/neo-tree.nvim/plugin/neo-tree.lua
+012.720  000.155  000.022: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.727  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+012.737  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+013.340  000.384  000.384: require('gitsigns')
+013.741  000.367  000.367: require('gitsigns.highlight')
+013.987  000.233  000.233: require('gitsigns.debug.log')
+014.106  000.115  000.115: require('gitsigns.config')
+014.713  000.054  000.054: require('gitsigns.debounce')
+014.725  001.810  000.656: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/gitsigns.nvim/plugin/gitsigns.lua
+014.733  001.834  000.024: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+014.748  000.007  000.007: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+014.761  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+015.186  000.004  000.004: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+015.195  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+015.628  000.331  000.331: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/telescope.nvim/plugin/telescope.lua
+015.636  000.364  000.032: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+015.646  000.003  000.003: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+015.657  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+016.642  000.149  000.149: require('telescope._extensions')
+016.650  000.988  000.839: require('telescope')
+016.840  000.189  000.189: require('telescope.builtin')
+017.408  000.113  000.113: require('plenary.bit')
+017.492  000.079  000.079: require('plenary.functional')
+017.553  000.371  000.179: require('plenary.path')
+017.571  000.574  000.203: require('plenary.strings')
+018.054  000.007  000.007: require('vim.F')
+018.097  000.186  000.179: require('plenary.log')
+018.118  000.395  000.209: require('telescope.log')
+018.654  000.105  000.105: require('plenary.compat')
+018.666  000.320  000.215: require('plenary.job')
+018.728  000.060  000.060: require('telescope.state')
+018.802  000.064  000.064: require('vim.hl')
+019.927  000.065  000.065: require('vim.treesitter.language')
+019.976  000.042  000.042: require('vim.func')
+020.056  000.076  000.076: require('vim.func._memoize')
+020.100  000.732  000.549: require('vim.treesitter.query')
+020.148  000.046  000.046: require('vim.treesitter._range')
+020.164  001.171  000.394: require('vim.treesitter.languagetree')
+020.170  001.355  000.184: require('vim.treesitter')
+020.264  002.144  000.346: require('telescope.utils')
+020.273  002.700  000.161: require('telescope.sorters')
+021.944  005.100  001.826: require('telescope.config')
+023.208  000.108  000.108: require('fzf_lib')
+023.215  000.230  000.122: require('telescope._extensions.fzf')
+023.352  000.009  000.009: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+023.358  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+023.750  000.025  000.025: require('toggleterm.lazy')
+023.771  000.018  000.018: require('toggleterm.constants')
+023.842  000.070  000.070: require('toggleterm.terminal')
+023.847  000.485  000.373: require('toggleterm')
+023.906  000.026  000.026: require('toggleterm.colors')
+023.937  000.031  000.031: require('toggleterm.utils')
+023.942  000.093  000.037: require('toggleterm.config')
+024.059  000.079  000.079: require('vim.version')
+025.233  000.078  000.078: require('toggleterm.commandline')
+025.516  000.064  000.064: sourcing /home/alexandreanfilo/.local/share/nvim/lazy/mason-tool-installer.nvim/plugin/mason-tool-installer.lua
+025.520  000.088  000.023: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+025.553  000.003  000.003: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+025.563  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+025.583  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+025.587  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+025.834  000.024  000.024: require('mason-core.path')
+025.933  000.019  000.019: require('mason-core.functional.data')
+025.964  000.028  000.028: require('mason-core.functional.function')
+026.034  000.066  000.066: require('mason-core.functional.list')
+026.078  000.037  000.037: require('mason-core.functional.relation')
+026.116  000.036  000.036: require('mason-core.functional.logic')
+026.153  000.035  000.035: require('mason-core.functional.number')
+026.200  000.042  000.042: require('mason-core.functional.string')
+026.242  000.040  000.040: require('mason-core.functional.table')
+026.274  000.029  000.029: require('mason-core.functional.type')
+026.277  000.398  000.066: require('mason-core.functional')
+026.324  000.488  000.090: require('mason-core.platform')
+026.409  000.083  000.083: require('mason.settings')
+026.413  000.641  000.045: require('mason-core.installer.InstallLocation')
+026.612  000.099  000.099: require('mason-core.log')
+026.615  000.145  000.046: require('mason-core.EventEmitter')
+026.675  000.059  000.059: require('mason-registry.sources')
+026.680  000.266  000.062: require('mason-registry')
+026.683  001.093  000.187: require('mason')
+026.832  000.107  000.107: require('mason.api.command')
+026.951  000.041  000.041: require('mason.version')
+026.963  000.121  000.080: require('mason-tool-installer')
+027.256  000.005  000.005: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+027.262  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+027.453  000.146  000.146: require('mason-lspconfig.settings')
+027.457  000.455  000.304: require('mason-lspconfig')
+028.333  000.004  000.004: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+028.345  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+029.099  000.430  000.430: require('lualine_require')
+029.536  001.187  000.757: require('lualine')
+029.704  000.013  000.013: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.379  000.007  000.007: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.391  000.003  000.003: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.398  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.403  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.409  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.414  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.420  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.425  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.430  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.435  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.439  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.444  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.448  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.452  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.485  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.491  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.495  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.506  000.009  000.009: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+030.941  000.050  000.050: require('lualine.utils.mode')
+031.175  000.005  000.005: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.183  000.004  000.004: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.312  000.005  000.005: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.320  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.325  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.330  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.335  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.339  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.344  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.350  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.355  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.359  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.363  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.368  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.372  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.376  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.382  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.386  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.390  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.414  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.421  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.428  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.433  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.532  000.006  000.006: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.561  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.564  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.569  000.004  000.004: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.963  000.005  000.005: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.971  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.976  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.980  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.985  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.989  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+031.993  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.000  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.004  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.008  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.012  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.016  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.020  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.024  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.029  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.033  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.036  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.040  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.044  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.048  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.052  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.057  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.062  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.067  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.071  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.075  000.001  000.001: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.079  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.083  000.002  000.002: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.579  000.011  000.011: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.601  000.004  000.004: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.616  000.012  000.012: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.624  000.005  000.005: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.629  000.003  000.003: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.773  000.037  000.037: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/editorconfig.lua
+032.775  000.056  000.018: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.932  000.116  000.116: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/gzip.vim
+032.935  000.129  000.013: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+032.987  000.038  000.038: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/man.lua
+032.989  000.049  000.011: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+033.323  000.162  000.162: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+033.339  000.338  000.176: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/matchit.vim
+033.342  000.350  000.012: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+033.440  000.083  000.083: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/matchparen.vim
+033.442  000.093  000.011: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+033.709  000.139  000.139: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/pack/dist/opt/netrw/plugin/netrwPlugin.vim
+033.718  000.263  000.124: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/netrwPlugin.vim
+033.720  000.273  000.011: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+033.815  000.040  000.040: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/osc52.lua
+033.817  000.056  000.016: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+033.942  000.095  000.095: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/rplugin.vim
+033.943  000.107  000.012: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+033.991  000.034  000.034: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/shada.vim
+033.992  000.046  000.012: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+034.016  000.009  000.009: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/spellfile.vim
+034.017  000.022  000.013: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+034.082  000.054  000.054: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/tarPlugin.vim
+034.084  000.064  000.010: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+034.123  000.027  000.027: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/tohtml.lua
+034.124  000.038  000.011: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+034.147  000.011  000.011: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/tutor.vim
+034.148  000.022  000.011: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+034.523  000.363  000.363: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/zipPlugin.vim
+034.534  000.384  000.020: sourcing nvim_exec2() called at /home/alexandreanfilo/.config/nvim/init.lua:0
+034.810  030.614  010.765: require('config.lazy')
+034.814  031.033  000.023: sourcing /home/alexandreanfilo/.config/nvim/init.lua
+034.822  000.263: sourcing vimrc file(s)
+035.051  000.043  000.043: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/filetype.lua
+035.204  000.052  000.052: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/syntax/synload.vim
+035.259  000.167  000.115: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/syntax/syntax.vim
+035.268  000.235: inits 3
+036.390  001.122: reading ShaDa
+036.489  000.099: opening buffers
+036.566  000.077: BufEnter autocommands
+036.568  000.002: editing files in windows
+036.575  000.008: --- NVIM STARTED ---
+
