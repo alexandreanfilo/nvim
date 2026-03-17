@@ -47,37 +47,41 @@ return {
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
         -- 3. Modern Neovim 0.11+ configuration
-        -- We use vim.lsp.config and vim.lsp.enable instead of the deprecated nvim-lspconfig[server].setup()
+        -- We use vim.lsp.config and vim.lsp.enable
         
-        -- Custom configurations
-        vim.lsp.config["lua_ls"] = {
-            on_attach = on_attach,
-            capabilities = capabilities,
-            settings = {
-                Lua = {
-                    diagnostics = { globals = { "vim" } },
-                    completion = { callSnippet = "Replace" },
-                },
-            },
-        }
-
-        vim.lsp.config["ts_ls"] = {
-            on_attach = on_attach,
-            capabilities = capabilities,
-        }
-
-        -- Default configuration for other servers
-        mason_lspconfig.setup_handlers({
-            function(server)
-                -- If we haven't already defined a config for this server, use a generic one
-                if not vim.lsp.config[server] then
-                    vim.lsp.config[server] = {
-                        on_attach = on_attach,
-                        capabilities = capabilities,
+        -- Helper function to configure and enable a server
+        local function setup_server(server)
+            if not vim.lsp.config[server] then
+                local config = {
+                    on_attach = on_attach,
+                    capabilities = capabilities,
+                }
+                
+                -- Specific settings for Lua
+                if server == "lua_ls" then
+                    config.settings = {
+                        Lua = {
+                            diagnostics = { globals = { "vim" } },
+                            completion = { callSnippet = "Replace" },
+                        },
                     }
                 end
-                -- Enable the server
-                vim.lsp.enable(server)
+                
+                vim.lsp.config[server] = config
+            end
+            vim.lsp.enable(server)
+        end
+
+        -- Initial setup for already installed servers
+        for _, server in ipairs(mason_lspconfig.get_installed_servers()) do
+            setup_server(server)
+        end
+
+        -- Handle servers installed later
+        vim.api.nvim_create_autocmd("User", {
+            pattern = "MasonLspConfigServerInstalled",
+            callback = function(args)
+                setup_server(args.data.server_name)
             end,
         })
     end,
