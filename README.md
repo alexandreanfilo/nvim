@@ -95,7 +95,7 @@ The `<leader>` key is set to `Space`.
 2. **Setup:**
    ```bash
    # Clone the config
-   git clone <your-repo-url> ~/.config/nvim
+   git clone https://github.com/alexandreanfilo/nvim.git ~/.config/nvim
 
    # Open Neovim and install plugins
    nvim +":Lazy sync"
